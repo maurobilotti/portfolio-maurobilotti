@@ -1,0 +1,36 @@
+.sidebar {
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  z-index: 10;
+  color: var(--light-slate);
+
+  &.left{
+    left: 40px;
+    right: auto;
+  }
+
+  &.right{
+    right: 40px;
+    left: auto;
+  }
+
+  .sidebar-container {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 90px;
+      margin: 0px auto;
+      background-color: var(--light-slate);
+    }
+  }
+}

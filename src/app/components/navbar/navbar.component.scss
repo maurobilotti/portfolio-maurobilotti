@@ -1,26 +1,27 @@
-/* .mat-toolbar {
-  height: 7vh;
-} */
-
 .mat-toolbar {
-  background-color: var(--navy);
+  background-color: var(--dark-navy);
 }
 
 .mat-sidenav-container {
-  /* background-color: lightskyblue; */
   min-height: 100vh !important;
 }
 
-img {
-  height: 60px;
-  width: 60px;
-}
-
 a {
-  color: white;
+  color: var(--light-slate);
   text-decoration: none;
   white-space: normal;
   font-family: "Fira Code", monospace;
+  transition: var(--transition);
+  span {
+    font-size: var(--fz-xxl);
+    font-family: var(--font-mono);
+  }
+
+  svg {
+    height: 35px;
+    width: 35px;
+  }
+
   &:hover {
     color: var(--green);
   }
@@ -34,6 +35,23 @@ a {
   flex: 1 1 auto;
 }
 
+// this is the page container
 .mat-sidenav-content {
   text-align: center;
+  padding: 0 150px;
+}
+
+.resume-button {
+  color: var(--green);
+  background-color: transparent;
+  border: 1px solid var(--green);
+  border-radius: var(--border-radius);
+  padding: 0.75rem 1rem;
+  font-family: var(--font-mono);
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: var(--transition);
+  margin-left: 15px;
+  font-size: var(--fz-xs);
 }

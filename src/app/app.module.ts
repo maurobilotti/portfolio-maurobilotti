@@ -10,6 +10,10 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { AngularMaterialModule } from './modules/angular-material/angular-material.module';
 import { LayoutModule } from '@angular/cdk/layout';
 import { AppRoutingModule } from './modules/app-routing/app-routing.module';
+import { SidebarComponent } from './components/sidebars/sidebar/sidebar.component';
+import { SidebarIconsComponent } from './components/sidebars/sidebar-icons/sidebar-icons.component';
+import { SidebarEmailComponent } from './components/sidebars/sidebar-email/sidebar-email.component';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +22,10 @@ import { AppRoutingModule } from './modules/app-routing/app-routing.module';
     AboutComponent,
     ExperienceComponent,
     ContactComponent,
-    NavbarComponent
+    NavbarComponent,
+    SidebarComponent,
+    SidebarIconsComponent,
+    SidebarEmailComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,41 @@
+.icons-list {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+
+  &::after,
+  &::before {
+    box-sizing: inherit;
+  }
+
+  li {
+    margin-bottom: 20px;
+    a {
+      display: inline-block;
+      text-decoration: none;
+      text-decoration-skip-ink: auto;
+      color: inherit;
+      position: relative;
+      transition: var(--transition);
+      cursor: pointer;
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+      &:hover,
+      &:focus {
+        color: var(--green);
+      }
+    }
+
+    &:hover,
+    &:focus {
+      transform: translateY(-3px);
+    }
+  }
+}
