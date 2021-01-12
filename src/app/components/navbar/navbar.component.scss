@@ -1,0 +1,39 @@
+/* .mat-toolbar {
+  height: 7vh;
+} */
+
+.mat-toolbar {
+  background-color: var(--navy);
+}
+
+.mat-sidenav-container {
+  /* background-color: lightskyblue; */
+  min-height: 100vh !important;
+}
+
+img {
+  height: 60px;
+  width: 60px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  white-space: normal;
+  font-family: "Fira Code", monospace;
+  &:hover {
+    color: var(--green);
+  }
+}
+
+.example-icon {
+  padding: 0 14px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.mat-sidenav-content {
+  text-align: center;
+}
