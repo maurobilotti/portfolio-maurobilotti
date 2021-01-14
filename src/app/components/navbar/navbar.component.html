@@ -1,4 +1,4 @@
-<div>
+<header>
   <mat-toolbar>
     <div fxShow="true" fxHide.gt-sm="true">
       <button mat-icon-button (click)="sidenav.toggle()">
@@ -16,7 +16,7 @@
       <a mat-button routerLink="/experience">Experience</a>
       <a mat-button routerLink="/about">About</a>
       <a mat-button routerLink="/contact">Contact</a>
-      <a class="resume-button" href="../../../assets/files/Resume - Mauro Bilotti.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+      <a class="rounded-button" href="../../../assets/files/Resume - Mauro Bilotti.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
     </div>
   </mat-toolbar>
   <mat-sidenav-container fxFlexFill class="example-container">
@@ -33,10 +33,11 @@
         <a mat-button routerLink="/experience">Experience</a>
         <a mat-button routerLink="/about">About</a>
         <a mat-button routerLink="/contact">Contact</a>
+        <a class="rounded-button" href="../../../assets/files/Resume - Mauro Bilotti.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
       </div>
     </mat-sidenav>
-    <mat-sidenav-content fxFlexFill>
+    <mat-sidenav-content fxFlexFill.ngClass.gt-sm>
       <ng-content></ng-content>
     </mat-sidenav-content>
   </mat-sidenav-container>
-</div>
+</header>

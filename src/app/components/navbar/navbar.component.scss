@@ -35,13 +35,37 @@ a {
   flex: 1 1 auto;
 }
 
+.mat-drawer-content{
+  overflow: initial;
+}
+
 // this is the page container
 .mat-sidenav-content {
   text-align: center;
   padding: 0 150px;
+
+  @media (max-width: 1080px) {
+    padding: 0 150px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0px 25px;
+    text-align: left;
+
+  }
 }
 
-.resume-button {
+.mat-icon-button{
+  color: var(--slate)
+}
+
+.mat-toolbar-row, .mat-toolbar-single-row{
+  @media (max-width: 480px) {
+    padding: 0px;
+  }
+}
+
+.rounded-button {
   color: var(--green);
   background-color: transparent;
   border: 1px solid var(--green);
@@ -54,4 +78,13 @@ a {
   transition: var(--transition);
   margin-left: 15px;
   font-size: var(--fz-xs);
+
+  &:hover{
+    background-color: var(--green-tint);
+  }
+}
+
+header {
+  /* This section calls the slideInFromLeft animation we defined above */
+  animation: 1s ease-out 0s 1 slideInFromLeft;
 }

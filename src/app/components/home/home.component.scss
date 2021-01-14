@@ -8,7 +8,12 @@
 
   .name-heading {
     margin: 0px;
-    font-size: clamp(40px, 8vw, 80px);
+    font-size: 80px;
+  }
+
+  .subtitle-heading {
+    margin: 0px;
+    font-size: 70px;
   }
 
   h1 {
@@ -31,7 +36,63 @@
 
   p {
     margin: 20px 0px 0px;
-    max-width: 500px;
+    max-width: 660px;
     color: var(--slate);
+    text-align: left;
+    .fab {
+      font-weight: 200;
+    }
+
+    .fa-node-js {
+      color: #be4bdb;
+    }
+
+    .fa-php {
+      color: #5d7eb5;
+    }
+
+    .fa-windows {
+      color: #4e2acd;
+    }
+
+    .fa-vuejs {
+      color: #00bb7c;
+    }
+
+    .fa-react {
+      color: #00d1f7;
+    }
+
+    .fa-angular {
+      color: #de2938;
+    }
+  }
+
+  .get-in-touch-button {
+    margin-top: 50px;
+  }
+
+  // img {
+  //   height: 400px;
+  //   width: 300px;
+  // }
+
+  .rounded-button {
+    color: var(--green);
+    background-color: transparent;
+    border: 1px solid var(--green);
+    border-radius: var(--border-radius);
+    padding: 0.75rem 1rem;
+    font-family: var(--font-mono);
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    transition: var(--transition);
+    margin-left: 15px;
+    font-size: var(--fz-xs);
+
+    &:hover{
+      background-color: var(--green-tint);
+    }
   }
 }

@@ -5,12 +5,12 @@
   z-index: 10;
   color: var(--light-slate);
 
-  &.left{
+  &.left {
     left: 40px;
     right: auto;
   }
 
-  &.right{
+  &.right {
     right: 40px;
     left: auto;
   }
@@ -24,13 +24,15 @@
     padding: 0px;
     list-style: none;
 
-    &::after {
-      content: "";
-      display: block;
-      width: 1px;
-      height: 90px;
-      margin: 0px auto;
-      background-color: var(--light-slate);
+    @media (min-width: 1080px) {
+      &::after {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 90px;
+        margin: 0px auto;
+        background-color: var(--light-slate);
+      }
     }
   }
 }
