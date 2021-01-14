@@ -2,6 +2,8 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 
 :root {
@@ -22,7 +24,7 @@
   --transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
   --font-sans: "Calibre", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
   --font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
-  --font-oswald: "Oswald", sans-serif;
+  --font-main: 'Roboto', sans-serif;
   --fz-xxs: 12px;
   --fz-xs: 13px;
   --fz-sm: 14px;
@@ -43,7 +45,7 @@ body {
   height: 100%;
   background-color: var(--navy);
   color: var(--slate);
-  font-family: var(--font-oswald);
+  font-family: var(--font-main);
 }
 
 mat-sidenav-container {
@@ -73,7 +75,6 @@ body {
   text-decoration: none;
   cursor: pointer;
   transition: var(--transition);
-  margin-left: 15px;
   font-size: var(--fz-xs);
 
   &:hover{
@@ -84,6 +85,15 @@ body {
 @keyframes slideInFromLeft {
   0% {
     transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
   }
   100% {
     transform: translateX(0);

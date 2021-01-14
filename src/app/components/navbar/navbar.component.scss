@@ -3,7 +3,7 @@
 }
 
 .mat-sidenav-container {
-  min-height: 100vh !important;
+  min-height: calc(100vh - 64px) !important
 }
 
 a {
@@ -35,7 +35,7 @@ a {
   flex: 1 1 auto;
 }
 
-.mat-drawer-content{
+.mat-drawer-content {
   overflow: initial;
 }
 
@@ -51,15 +51,15 @@ a {
   @media (max-width: 480px) {
     padding: 0px 25px;
     text-align: left;
-
   }
 }
 
-.mat-icon-button{
-  color: var(--slate)
+.mat-icon-button {
+  color: var(--slate);
 }
 
-.mat-toolbar-row, .mat-toolbar-single-row{
+.mat-toolbar-row,
+.mat-toolbar-single-row {
   @media (max-width: 480px) {
     padding: 0px;
   }
@@ -79,7 +79,7 @@ a {
   margin-left: 15px;
   font-size: var(--fz-xs);
 
-  &:hover{
+  &:hover {
     background-color: var(--green-tint);
   }
 }
@@ -87,4 +87,8 @@ a {
 header {
   /* This section calls the slideInFromLeft animation we defined above */
   animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+.nav-number {
+  font-size: var(--fz-sm);
 }
