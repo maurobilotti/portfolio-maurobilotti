@@ -2,15 +2,15 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 :root {
   --black: #150015;
-  --navy: #0a192f;
-  --dark-navy: #09162a;
-  --navy: #0a192f;
+  --dark-navy: #303031;
+  --navy: #1e1e1e;
+  --yellow: #eeee6b;
+  --dark-yellow: #d7ba5e;
   --light-navy: #112240;
   --lightest-navy: #233554;
   --navy-shadow: rgba(2, 12, 27, 0.7);
@@ -19,12 +19,12 @@
   --lightest-slate: #ccd6f6;
   --white: #e6f1ff;
   --green: #64ffda;
-  --green-tint: rgba(100,255,218,0.1);
-  --pink: #FF6489;
-  --transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  --green-tint: rgba(100, 255, 218, 0.1);
+  --orange: #ce9178;
+  --transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
   --font-sans: "Calibre", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
   --font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
-  --font-main: 'Roboto', sans-serif;
+  --font-main: "Roboto", sans-serif;
   --fz-xxs: 12px;
   --fz-xs: 13px;
   --fz-sm: 14px;
@@ -32,7 +32,8 @@
   --fz-lg: 18px;
   --fz-xl: 20px;
   --fz-xxl: 22px;
-  --fz-heading: 32px;
+  --fz-icons: 28px;
+  --fz-heading: 22px;
   --border-radius: 4px;
   --nav-height: 100px;
   --nav-scroll-height: 70px;
@@ -64,6 +65,75 @@ body {
   line-height: 1.3;
 }
 
+section {
+  margin: 0px auto;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px 0px 10px;
+  font-weight: 600;
+  color: var(--lightest-slate);
+  line-height: 1.1;
+}
+
+p {
+  color: var(--slate);
+  font-family: var(--font-main);
+  text-align: left;
+}
+
+a {
+  color: var(--lightest-slate);
+  text-decoration: none;
+
+  &:hover {
+    transition: var(--transition);
+    color: var(--yellow);
+  }
+}
+
+.section-heading {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  margin: 10px 0px 10px;
+  width: 100%;
+  font-size: clamp(20px, 5vw, var(--fz-heading));
+  white-space: nowrap;
+  font-weight: 500;
+
+  &::before {
+    position: relative;
+    content: "0" counter(section) ".";
+    margin-right: 10px;
+    color: var(--yellow);
+    font-family: var(--font-mono);
+    font-size: clamp(var(--fz-md), 3vw, var(--fz-xl));
+    font-weight: 400;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: -2px;
+    width: 300px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: var(--light-slate);
+  }
+}
+
 .rounded-button {
   color: var(--green);
   background-color: transparent;
@@ -77,7 +147,7 @@ body {
   transition: var(--transition);
   font-size: var(--fz-xs);
 
-  &:hover{
+  &:hover {
     background-color: var(--green-tint);
   }
 }

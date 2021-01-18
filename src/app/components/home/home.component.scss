@@ -15,7 +15,7 @@
 
   .subtitle-heading {
     margin: 0px;
-    font-size: 70px;
+    font-size: 56px;
     text-align: left;
 
     @media (max-width: 480px) {
@@ -43,9 +43,8 @@
 
   p {
     margin: 20px 0px 0px;
-    max-width: 660px;
-    color: var(--slate);
-    text-align: left;
+    max-width: 780px;
+
     .fab {
       font-weight: 200;
     }

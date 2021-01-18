@@ -1,4 +1,5 @@
 .icons-list {
+  animation: 1s ease-out 0s 1 slideInFromLeft;
   display: flex;
   flex-direction: column;
   -webkit-box-align: center;
@@ -27,15 +28,46 @@
         width: 20px;
         height: 20px;
       }
-      &:hover,
-      &:focus {
-        color: var(--green);
+
+      .feather-linkedin {
+        &:hover,
+        &:focus {
+          color: #4285d6;
+        }
+      }
+
+      .feather-facebook {
+        &:hover,
+        &:focus {
+          color: #3f6eca;
+        }
+      }
+
+      .feather-github {
+        &:hover,
+        &:focus {
+          color: white;
+        }
+      }
+
+      .feather-instagram {
+        &:hover,
+        &:focus {
+          color: #b760da;
+        }
+      }
+
+      .feather-code {
+        &:hover,
+        &:focus {
+          color: #ec7c22;
+        }
       }
     }
 
     &:hover,
     &:focus {
-      transform: translateY(-3px);
+      transform: translateY(-2px);
     }
   }
 }

@@ -26,6 +26,7 @@
 
     @media (min-width: 1080px) {
       &::after {
+        animation: 1s ease-out 0s 1 slideInFromLeft;
         content: "";
         display: block;
         width: 1px;

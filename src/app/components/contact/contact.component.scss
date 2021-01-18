@@ -1,0 +1,9 @@
+.contact-container {
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+
+  .section-heading {
+    &::before {
+      counter-increment: section 3;
+    }
+  }
+}
